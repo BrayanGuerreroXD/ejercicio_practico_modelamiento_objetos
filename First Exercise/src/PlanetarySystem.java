@@ -30,11 +30,24 @@ public class PlanetarySystem {
     }
 
     private void addCelestialBody(CelestialBody cb) {
-        if(cb.getName().equalsIgnoreCase("sun")) {
+        if(cb.getName().equalsIgnoreCase("sun") && !this.searchCelestialBody("sun")) {
             this.planetarySystem.add(cb);
             this.orderCelestialBodies();
         }else{
-
+            throw new IllegalArgumentException("No se puede agregar otro sol al sistema solar");
         }
+    }
+
+    private boolean searchCelestialBody(String name) {
+        boolean isPresent = false;
+
+        for(CelestialBody cb: planetarySystem) {
+            if(cb.getName().equalsIgnoreCase(name)) {
+                isPresent = true;
+                break;
+            }
+        }
+
+        return isPresent;
     }
 }
