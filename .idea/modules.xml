@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Fifth Exercise/Fifth Exercise.iml" filepath="$PROJECT_DIR$/Fifth Exercise/Fifth Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/First Exercise/First Exercise.iml" filepath="$PROJECT_DIR$/First Exercise/First Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fourth Exercise/Fourth Exercise.iml" filepath="$PROJECT_DIR$/Fourth Exercise/Fourth Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Second Exercise/Second Exercise.iml" filepath="$PROJECT_DIR$/Second Exercise/Second Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sixth Exercise/Sixth Exercise.iml" filepath="$PROJECT_DIR$/Sixth Exercise/Sixth Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Third Exercise/Third Exercise.iml" filepath="$PROJECT_DIR$/Third Exercise/Third Exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/ejercicio_practico_modelamiento_objetos.iml" filepath="$PROJECT_DIR$/ejercicio_practico_modelamiento_objetos.iml" />
     </modules>
   </component>
