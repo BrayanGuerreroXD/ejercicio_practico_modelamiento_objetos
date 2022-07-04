@@ -89,7 +89,6 @@ public class PlanetarySystem {
         double radio2 = (cb2.getDiameter()/2);
 
         r = radio1 + radio2 + Math.abs(cb1.getDistance() - cb2.getDistance());
-
         gbf = (gravity * ((m1 * m2) / (r * r)));
 
         return gbf;
