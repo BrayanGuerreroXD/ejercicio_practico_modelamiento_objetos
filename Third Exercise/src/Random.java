@@ -1,3 +1,14 @@
+/**
+ *Random class that allows you to have an array with random numbers inside and sorting methods.
+ *
+ * @version 1.0.0 2022-07-03
+ *
+ * @author Brayan Stewart Guerrero Ordoñez – bg7047653@gmail.com
+ *
+ * @since 1.0.0 2022-07-03
+ *
+ */
+
 public class Random {
     private final int[] randomArray = new int[10];
 
@@ -5,17 +16,26 @@ public class Random {
         return randomArray;
     }
 
+    /**
+     * Method that prints the array values
+     */
     public void printArray() {
         for(int value: randomArray) {
             System.out.println("" + value);
         }
     }
 
+    /**
+     * Method that adds random numbers to the array
+     */
     public void fillArray() {
         for (int x=0;x<randomArray.length;x++)
             randomArray[x] = (int) (Math.random()*20)+1;
     }
 
+    /**
+     * Bubble sorting method
+     */
     public void bubble() {
         for (int x = 0; x < this.randomArray.length; x++) {
             for (int y = 0; y < this.randomArray.length - 1; y++) {
@@ -29,6 +49,12 @@ public class Random {
         }
     }
 
+    /**
+     * Quicksort ordering method
+     * @param array
+     * @param izquierda
+     * @param derecha
+     */
     public void quicksort(int[] array, int izquierda, int derecha) {
         if (izquierda < derecha) {
             int indiceParticion = particion(array, izquierda, derecha);

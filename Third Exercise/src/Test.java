@@ -1,5 +1,16 @@
 import java.util.Scanner;
 
+/**
+ *Class that tests the program's functionalities
+ *
+ * @version 1.0.0 2022-07-03
+ *
+ * @author Brayan Stewart Guerrero Ordoñez – bg7047653@gmail.com
+ *
+ * @since 1.0.0 2022-07-03
+ *
+ */
+
 public class Test {
     public static void main(String[] args) {
         Random random = new Random();
