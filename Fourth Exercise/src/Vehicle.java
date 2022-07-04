@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 /**
- *
+ * Class presenting basic vehicle characteristics
  *
  * @version 1.0.0 2022-07-04
  *
@@ -11,21 +11,24 @@ import java.util.Objects;
  *
  */
 
-public class Vehiculo {
+public class Vehicle {
     private int numPassengers;
     private boolean isManned;
     private int numWheels;
     private String enrollmentDate;
     private String environment;
 
-    public Vehiculo(int numPassengers, boolean isManned, int numWheels, String enrollmentDate, String environment) {
+    public Vehicle(int numPassengers, int numWheels, String enrollmentDate, String environment) {
         this.numPassengers = Objects.requireNonNull(numPassengers);
-        this.isManned = Objects.requireNonNull(isManned);
         this.numWheels = Objects.requireNonNull(numWheels);
         this.enrollmentDate = Objects.requireNonNull(enrollmentDate);
         this.environment = Objects.requireNonNull(environment);
 
-        if((!isManned && numPassengers > 0) || (isManned && numPassengers <= 0) || numPassengers < 0) {
+        if(numPassengers > 0) {
+            this.isManned = true;
+        }else if(numPassengers == 0){
+            this.isManned = false;
+        }else {
             throw new IllegalArgumentException("Inconsistencia en los datos");
         }
     }
