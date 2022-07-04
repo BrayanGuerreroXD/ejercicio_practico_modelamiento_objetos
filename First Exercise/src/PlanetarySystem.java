@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Objects;
 
 public class PlanetarySystem {
     private ArrayList<CelestialBody> planetarySystem;
@@ -9,7 +10,7 @@ public class PlanetarySystem {
     }
 
     public PlanetarySystem(ArrayList<CelestialBody> planetarySystem) {
-        this.planetarySystem = planetarySystem;
+        this.planetarySystem = Objects.requireNonNull(planetarySystem);
     }
 
     public ArrayList<CelestialBody> getPlanetarySystem() {
