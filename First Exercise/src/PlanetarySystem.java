@@ -26,7 +26,10 @@ public class PlanetarySystem {
         if(cb.getName().equalsIgnoreCase("sun") && !this.searchCelestialBody("sun")) {
             this.planetarySystem.add(cb);
             this.orderCelestialBodies();
-        }else{
+        }else if(!this.searchCelestialBody(cb.getName())) {
+            this.planetarySystem.add(cb);
+            this.orderCelestialBodies();
+        }else {
             throw new IllegalArgumentException("No se puede agregar otro sol al sistema solar");
         }
     }

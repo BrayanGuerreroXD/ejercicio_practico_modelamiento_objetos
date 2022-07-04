@@ -16,7 +16,7 @@ public class CelestialBody {
         this.diameter = Objects.requireNonNull(diameter);
         this.distance = Objects.requireNonNull(distance);
 
-        if((mass <= 0) || (density <= 0) || (diameter <= 0) || (distance <= 0)) {
+        if((mass <= 0) || (density <= 0) || (diameter <= 0)) {
             throw new IllegalArgumentException("No se pueden ingresar valores menores o igual a cero");
         }
     }
