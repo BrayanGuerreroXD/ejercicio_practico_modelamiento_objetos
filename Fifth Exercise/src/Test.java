@@ -92,24 +92,26 @@ public class Test {
             System.out.println("3. Bicicleta");
             System.out.println("4. Camioneta");
             System.out.println("5. Bote");
+
             int choise = test.sc.nextInt();
-            switch(choise) {
-                case 1: {
+
+            switch (choise) {
+                case 1 -> {
                     test.addCar();
                 }
-                case 2: {
+                case 2 -> {
                     test.addMotorcycle();
                 }
-                case 3: {
+                case 3 -> {
                     test.addBicycle();
                 }
-                case 4: {
+                case 4 -> {
                     test.addTruck();
                 }
-                case 5: {
+                case 5 -> {
                     test.addBoat();
                 }
-                default: {
+                default -> {
                     break;
                 }
             }

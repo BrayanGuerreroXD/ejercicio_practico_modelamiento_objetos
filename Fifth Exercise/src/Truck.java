@@ -13,7 +13,12 @@ public class Truck extends Vehicle {
     @Override
     public String toString() {
         return "Truck{" +
-                "height=" + height +
+                "numPassengers=" + super.getNumPassengers() +
+                ", isManned=" + super.isManned() +
+                ", numWheels=" + super.getNumWheels() +
+                ", enrollmentDate='" + super.getEnrollmentDate() + '\'' +
+                ", environment='" + super.getEnvironment() + '\'' +
+                ", height=" + height +
                 '}';
     }
 }

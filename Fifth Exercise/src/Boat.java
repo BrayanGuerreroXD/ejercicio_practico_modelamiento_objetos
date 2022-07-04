@@ -13,7 +13,12 @@ public class Boat extends Vehicle {
     @Override
     public String toString() {
         return "Boat{" +
-                "material='" + material + '\'' +
+                "numPassengers=" + super.getNumPassengers() +
+                ", isManned=" + super.isManned() +
+                ", numWheels=" + super.getNumWheels() +
+                ", enrollmentDate='" + super.getEnrollmentDate() + '\'' +
+                ", environment='" + super.getEnvironment() + '\'' +
+                ", material='" + material + '\'' +
                 '}';
     }
 }

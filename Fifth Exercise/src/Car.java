@@ -29,7 +29,12 @@ public class Car extends Vehicle {
     @Override
     public String toString() {
         return "Car{" +
-                "notFourWheels=" + notFourWheels +
+                "numPassengers=" + super.getNumPassengers() +
+                ", isManned=" + super.isManned() +
+                ", numWheels=" + super.getNumWheels() +
+                ", enrollmentDate='" + super.getEnrollmentDate() + '\'' +
+                ", environment='" + super.getEnvironment() + '\'' +
+                ", notFourWheels=" + notFourWheels +
                 '}';
     }
 }

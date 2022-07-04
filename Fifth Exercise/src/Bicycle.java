@@ -13,7 +13,12 @@ public class Bicycle extends Vehicle {
     @Override
     public String toString() {
         return "Bicycle{" +
-                "type='" + type + '\'' +
+                "numPassengers=" + super.getNumPassengers() +
+                ", isManned=" + super.isManned() +
+                ", numWheels=" + super.getNumWheels() +
+                ", enrollmentDate='" + super.getEnrollmentDate() + '\'' +
+                ", environment='" + super.getEnvironment() + '\'' +
+                ", type='" + type + '\'' +
                 '}';
     }
 }

@@ -13,7 +13,12 @@ public class Motorcycle extends Vehicle {
     @Override
     public String toString() {
         return "Motorcycle{" +
-                "cylinderCapacity=" + cylinderCapacity +
+                "numPassengers=" + super.getNumPassengers() +
+                ", isManned=" + super.isManned() +
+                ", numWheels=" + super.getNumWheels() +
+                ", enrollmentDate='" + super.getEnrollmentDate() + '\'' +
+                ", environment='" + super.getEnvironment() + '\'' +
+                ", cylinderCapacity=" + cylinderCapacity +
                 '}';
     }
 }
