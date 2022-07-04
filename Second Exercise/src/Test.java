@@ -17,4 +17,9 @@ public class Test {
     private static void main() {
         System.out.println("xd x2");
     }
+
+    /*
+    Se presenta que aunque se encuentren mas de una clase principal en el proyecto, se debe
+    seleccionar una a la hora de ejecutar
+     */
 }
