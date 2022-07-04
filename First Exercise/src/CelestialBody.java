@@ -3,12 +3,12 @@ import java.util.Objects;
 public class CelestialBody {
     private final String name;
     private final int id;
-    private final int mass;
-    private final int density;
-    private final int diameter;
-    private final int distance;
+    private final double mass;
+    private final double density;
+    private final double diameter;
+    private final double distance;
 
-    public CelestialBody(String name, int id, int mass, int density, int diameter, int distance) {
+    public CelestialBody(String name, int id, double mass, double density, double diameter, double distance) {
         this.name = Objects.requireNonNull(name);
         this.id = Objects.requireNonNull(id);
         this.mass = Objects.requireNonNull(mass);
@@ -29,19 +29,19 @@ public class CelestialBody {
         return id;
     }
 
-    public int getMass() {
+    public double getMass() {
         return mass;
     }
 
-    public int getDensity() {
+    public double getDensity() {
         return density;
     }
 
-    public int getDiameter() {
+    public double getDiameter() {
         return diameter;
     }
 
-    public int getDistance() {
+    public double getDistance() {
         return distance;
     }
 

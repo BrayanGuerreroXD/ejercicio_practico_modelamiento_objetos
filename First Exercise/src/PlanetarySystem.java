@@ -18,19 +18,19 @@ public class PlanetarySystem {
     }
 
     public void setPlanetarySystem(ArrayList<CelestialBody> planetarySystem) {
-        this.planetarySystem = planetarySystem;
+        this.planetarySystem = Objects.requireNonNull(planetarySystem);
     }
 
     private void orderCelestialBodies() {
         planetarySystem.sort(new Comparator<CelestialBody>() {
             @Override
             public int compare(CelestialBody celestialBody1, CelestialBody celestialBody2) {
-                return Integer.compare(celestialBody1.getDistance(), celestialBody2.getDistance());
+                return Double.compare(celestialBody1.getDistance(), celestialBody2.getDistance());
             }
         });
     }
 
-    private void addCelestialBody(CelestialBody cb) {
+    public void addCelestialBody(CelestialBody cb) {
         if(cb.getName().equalsIgnoreCase("sun") && !this.searchCelestialBody("sun")) {
             this.planetarySystem.add(cb);
             this.orderCelestialBodies();
