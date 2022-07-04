@@ -1,13 +1,33 @@
 import java.util.Objects;
 
+/**
+ *Celestial body is a class that performs an abstraction of the characteristics of a celestial body of the solar system
+ *
+ * @version 1.0.0 2022-07-03
+ *
+ * @author Brayan Stewart Guerrero Ordoñez – bg7047653@gmail.com
+ *
+ * @since 1.0.0 2022-07-03
+ *
+ */
+
 public class CelestialBody {
     private final String name;
     private final int id;
-    private final double mass;
-    private final double density;
-    private final double diameter;
-    private final double distance;
+    private final double mass; // Determined mass in kilograms (Kg)
+    private final double density; // Determined density in g/cm^3
+    private final double diameter; // Determined diameter in kilometers (Km)
+    private final double distance; // Determined distance in kilometers (Km)
 
+    /**
+     * Constructor of an instance of the class CelestialBody
+     * @param name
+     * @param id
+     * @param mass
+     * @param density
+     * @param diameter
+     * @param distance
+     */
     public CelestialBody(String name, int id, double mass, double density, double diameter, double distance) {
         this.name = Objects.requireNonNull(name);
         this.id = Objects.requireNonNull(id);
