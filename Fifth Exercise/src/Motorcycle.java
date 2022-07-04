@@ -1,12 +1,19 @@
 public class Motorcycle extends Vehicle {
     private int cylinderCapacity;
 
-    public Motorcycle(int numPassengers, int numWheels, String enrollmentDate, String environment, int cylinderCapacity) {
-        super(numPassengers, numWheels, enrollmentDate, environment);
+    public Motorcycle(int numPassengers, int numWheels, String enrollmentDate, int cylinderCapacity) {
+        super(numPassengers, numWheels, enrollmentDate, "Terrestre");
         this.cylinderCapacity = cylinderCapacity;
     }
 
     public int getCylinderCapacity() {
         return cylinderCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return "Motorcycle{" +
+                "cylinderCapacity=" + cylinderCapacity +
+                '}';
     }
 }
